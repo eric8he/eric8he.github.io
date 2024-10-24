@@ -28,12 +28,12 @@ html {
 }
 
 @keyframes backgroundScroll {
-  0% { background-position: 50% 50%; }
-  33% { background-position: 1% 50%; }
-  40% { background-position: 1% 50%; }
-  66% { background-position: 99% 50%; }
-  70% { background-position: 99% 50%; }
-  100% { background-position: 50% 50%; }
+  0% { background-position: 50% 55%; }
+  33% { background-position: 1% 55%; }
+  40% { background-position: 1% 55%; }
+  66% { background-position: 99% 55%; }
+  70% { background-position: 99% 55%; }
+  100% { background-position: 50% 55%; }
 }
 
 #move-scroll {
