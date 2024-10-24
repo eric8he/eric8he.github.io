@@ -16,9 +16,9 @@ function updateNavbar() {
     lastScrollY = scrollY;
 }
 
-// Smooth scroll to services
-function scrollToServices() {
-    document.getElementById('services').scrollIntoView({ 
+// Smooth scroll to projects
+function scrollToProjects() {
+    document.getElementById('projects').scrollIntoView({ 
         behavior: 'smooth',
         block: 'start'
     });
