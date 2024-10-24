@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric He</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg-injector/1.1.3/svg-injector.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-900 text-gray-100">
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out opacity-0 -translate-y-full backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-500">
+                EH
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#services" class="text-gray-300 hover:text-white transition-colors duration-200">Services</a>
+                <a href="#projects" class="text-gray-300 hover:text-white transition-colors duration-200">Projects</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-200">Contact</a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a href="#" class="p-2 rounded-full hover:bg-slate-800 transition-colors duration-200" aria-label="GitHub">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <a href="#" class="p-2 rounded-full hover:bg-slate-800 transition-colors duration-200" aria-label="Contact">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80" alt="Background" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/50 to-slate-900"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto -mt-16">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-fuchsia-500">
+                Eric He
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                Deep Learning & Full Stack Development
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/eric8he" class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors duration-300 hover:text-blue-400" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/eric-he-sea/" class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors duration-300 hover:text-blue-400" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="mailto:eriche26@stanford.edu" class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition-colors duration-300 hover:text-blue-400" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+            </div>
+        </div>
+        
+        <button onclick="scrollToServices()" class="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce hover:text-blue-400 transition-colors duration-300 cursor-pointer" aria-label="Scroll to services">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="py-24 px-4 bg-slate-800/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-xl bg-slate-800/50 hover:bg-slate-800 transition-colors duration-300 border border-slate-700 hover:border-slate-600 group">
+                    <div class="mb-4 text-blue-400 group-hover:text-blue-300 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 512 512" fill="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect y="182.044" width="147.911" height="147.911"/><rect x="182.044" width="147.911" height="147.911"/><rect x="182.044" y="182.044" width="147.911" height="147.911"/><rect x="182.044" y="364.089" width="147.911" height="147.911"/><path d="M460.8,0h-96.711v147.911H512V51.2C512,22.967,489.033,0,460.8,0z"/><rect x="364.089" y="182.044" width="147.911" height="147.911"/><path d="M0,364.089V460.8C0,489.033,22.967,512,51.2,512h96.711V364.089H0z"/><path d="M364.089,364.089V512H460.8c28.233,0,51.2-22.967,51.2-51.2v-96.711H364.089z"/><path d="M51.2,0C22.967,0,0,22.967,0,51.2v96.711h147.911V0H51.2z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">RCTimer</h3>
+                    <p class="text-gray-400">A next-gen speedcubing timer written in React/JSX.</p>
+                    <img src="./resources/rctimer.png" alt="RCTimer screenshot" class="w-full mt-4 rounded-lg" style="margin-bottom:15px;"/>
+                    <div class="flex justify-center">
+                        <a href="./rctimer/index.html" class="text-blue-400 hover:text-blue-300 transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+                            Try it out!
+                        </a>
+                    </div>
+                </div>
+                <div class="p-8 rounded-xl bg-slate-800/50 hover:bg-slate-800 transition-colors duration-300 border border-slate-700 hover:border-slate-600 group">
+                    <div class="mb-4 text-blue-400 group-hover:text-blue-300 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="100 100 900 900" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M485 903q6 7 15 7t15-7l190-197q6-6 6-15V309q0-9-6-15L515 97q-6-7-15-7t-15 7L295 294q-6 6-6 15v382q0 9 6 15zm20-605l67 99q2 3 2 7v192q0 4-2 7l-67 99q-2 4-5 4t-5-4l-67-99q-2-3-2-7V404q0-4 2-7l67-99q2-4 5-4t5 4zm-166 14l149-169q3-3 7.5-1.5t4.5 6.5v51q0 3-1 5L385 346q-2 2-4.5 2.5T376 347l-36-25q-2-1-2.5-4t1.5-6zm-12 51q0-4 3-5.5t7 .5l37 25q3 2 3 6v223q0 3-2 5l-38 33q-3 3-6.5 1t-3.5-6V363z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Northwest Mineral Collective</h3>
+                    <p class="text-gray-400">Largest online mineral retailer in WA. Custom code on a Squarespace base.</p>
+                    <img src="./resources/nwmin.png" alt="RCTimer screenshot" class="w-full mt-4 rounded-lg" style="margin-bottom:15px;"/>
+                    <div class="flex justify-center">
+                        <a href="https://nwmineralcollective.com/" class="text-blue-400 hover:text-blue-300 transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+                            Visit us!
+                        </a>
+                    </div>
+                </div>
+                <div class="p-8 rounded-xl bg-slate-800/50 hover:bg-slate-800 transition-colors duration-300 border border-slate-700 hover:border-slate-600 group">
+                    <div class="mb-4 text-blue-400 group-hover:text-blue-300 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-5.5 0 19 19" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M7.987 5.653a4.536 4.536 0 0 1-.149 1.213 4.276 4.276 0 0 1-.389.958 5.186 5.186 0 0 1-.533.773c-.195.233-.386.454-.568.658l-.024.026c-.17.18-.328.353-.468.516a3.596 3.596 0 0 0-.4.567 2.832 2.832 0 0 0-.274.677 3.374 3.374 0 0 0-.099.858v.05a1.03 1.03 0 0 1-2.058 0v-.05a5.427 5.427 0 0 1 .167-1.385 4.92 4.92 0 0 1 .474-1.17 5.714 5.714 0 0 1 .63-.89c.158-.184.335-.38.525-.579.166-.187.34-.39.52-.603a3.108 3.108 0 0 0 .319-.464 2.236 2.236 0 0 0 .196-.495 2.466 2.466 0 0 0 .073-.66 1.891 1.891 0 0 0-.147-.762 1.944 1.944 0 0 0-.416-.633 1.917 1.917 0 0 0-.62-.418 1.758 1.758 0 0 0-.723-.144 1.823 1.823 0 0 0-.746.146 1.961 1.961 0 0 0-1.06 1.062 1.833 1.833 0 0 0-.146.747v.028a1.03 1.03 0 1 1-2.058 0v-.028a3.882 3.882 0 0 1 .314-1.56 4.017 4.017 0 0 1 2.135-2.139 3.866 3.866 0 0 1 1.561-.314 3.792 3.792 0 0 1 1.543.314A3.975 3.975 0 0 1 7.678 4.09a3.933 3.933 0 0 1 .31 1.563zm-2.738 9.81a1.337 1.337 0 0 1 0 1.033 1.338 1.338 0 0 1-.71.71l-.005.003a1.278 1.278 0 0 1-.505.103 1.338 1.338 0 0 1-1.244-.816 1.313 1.313 0 0 1 .284-1.451 1.396 1.396 0 0 1 .434-.283 1.346 1.346 0 0 1 .526-.105 1.284 1.284 0 0 1 .505.103l.005.003a1.404 1.404 0 0 1 .425.281 1.28 1.28 0 0 1 .285.418z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">In the works...</h3>
+                    <p class="text-gray-400">You never saw this.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="py-24 px-4 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Contact</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-xl bg-slate-800/50 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 group">
+                    <div class="mb-4 text-blue-400 group-hover:text-blue-300 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 -2.5 20 20" fill="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Dribbble-Light-Preview" transform="translate(-300.000000, -922.000000)" fill="currentColor"><g id="icons" transform="translate(56.000000, 160.000000)"><path d="M262,764.291 L254,771.318 L246,764.281 L246,764 L262,764 L262,764.291 Z M246,775 L246,766.945 L254,773.98 L262,766.953 L262,775 L246,775 Z M244,777 L264,777 L264,762 L244,762 L244,777 Z" id="email-[#1573]"></path></g></g></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Email</h3>
+                    <p class="text-gray-400">
+                        eriche26@stanford.edu
+                    </p>
+                </div>
+                <div class="p-8 rounded-xl bg-slate-800/50 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 group">
+                    <h3 class="text-xl font-semibold mb-3">Phone</h3>
+                    <p class="text-gray-400">
+                        (425) 658-6668
+                    </p>
+                </div>
+                <div class="p-8 rounded-xl bg-slate-800/50 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 group">
+                    <h3 class="text-xl font-semibold mb-3">Resume</h3>
+                    <a href="./EricHeResume2024.pdf" download="EricHeResume2024.pdf" class="text-blue-400 hover:text-blue-300 transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+                        Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

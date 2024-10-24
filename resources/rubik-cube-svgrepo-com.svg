@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<g>
+	<g>
+		<rect y="182.044" width="147.911" height="147.911"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="182.044" width="147.911" height="147.911"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="182.044" y="182.044" width="147.911" height="147.911"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="182.044" y="364.089" width="147.911" height="147.911"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M460.8,0h-96.711v147.911H512V51.2C512,22.967,489.033,0,460.8,0z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="364.089" y="182.044" width="147.911" height="147.911"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M0,364.089V460.8C0,489.033,22.967,512,51.2,512h96.711V364.089H0z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M364.089,364.089V512H460.8c28.233,0,51.2-22.967,51.2-51.2v-96.711H364.089z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M51.2,0C22.967,0,0,22.967,0,51.2v96.711h147.911V0H51.2z"/>
+	</g>
+</g>
+</svg>
