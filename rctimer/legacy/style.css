@@ -1,0 +1,50 @@
+body {
+    height: 500px;
+}
+
+#timer_container {
+    background-color: aqua;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 150px;
+    height: 100px;
+    padding: 0px;
+}
+
+#time {
+    font-size: x-large;
+}
+
+#time_list {
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 150px;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+#time_list::-webkit-scrollbar {
+    display: none;
+}
+
+.bg_red {
+    background-color: red;
+}
+
+.bg_green {
+    background-color: green;
+}
+
+.bg_aqua {
+    background-color: aqua;
+}
+
+.fs_div {
+    margin: 0px;
+    padding-top: 10%;
+    height: 100%;
+}

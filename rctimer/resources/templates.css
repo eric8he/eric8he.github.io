@@ -1,0 +1,177 @@
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body>* {
+    flex-shrink: 0;
+}
+
+html {
+    background-image: url("./bg.jpg");
+    height: 100%;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0px;
+    height: 100%;
+    /* text */
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+#scramble {
+    padding-top: 3%;
+    font-size: 25px;
+    z-index: 0;
+}
+
+#time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 250px;
+    font-style: italic;
+    z-index: 0;
+}
+
+#overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    z-index: 1;
+    /*margin: 50px;*/
+}
+
+#grid {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.black {
+    border-radius: 30px;
+    margin: 30px;
+    padding: 20px;
+    background-color: black;
+    z-index: 100;
+    border-style: solid;
+}
+
+.btn-dark {
+    background-color: black;
+    border: none;
+}
+
+.menu-row {
+    margin: 20px;
+}
+
+svg {
+    text-align: center;
+    width: 80%;
+}
+
+#averages {
+    text-align: center !important;
+    width: 100% !important;
+    font-size: 69px;
+}
+
+.bg_red {
+    color: red !important;
+}
+
+.bg_green {
+    color: green !important;
+}
+
+.bg_white {
+    color: white !important;
+}
+
+.space {
+    flex-grow: 1;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.timeComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.space2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+    color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+:hover.space2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(12, 12, 12));
+    color: rgb(160, 160, 160);
+    display: flex;
+    flex-direction: column;
+}
+
+.nothingSpacer {
+    height: 50%;
+}
+
+.widget {
+    background-color: rgb(0, 0, 0);
+}
+
+.widget-SE {
+    position: fixed;
+    bottom: 0;
+    transform-origin: bottom left;
+    transform: scale(0.8);
+}
+
+.widget-SW {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+}
+
+twisty-player {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.np-bottom {
+    padding-bottom: 0;
+}
+
+.nm {
+    margin: 0;
+}
+
+.scroll {
+    height: 180px;
+    overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.nph {
+    padding-left: 0;
+    padding-right: 0;
+}
