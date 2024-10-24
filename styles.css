@@ -45,6 +45,15 @@ html {
   animation: backgroundScroll 60s ease-in-out 1s infinite; 
 }
 
+#scroll-fade {
+  animation: scrollfade linear both;
+  animation-timeline: scroll();
+}
+
+#opacity-arrow {
+  animation: opacityonly linear both;
+  animation-timeline: scroll();
+}
 
 @keyframes bounce {
   0%, 100% {
@@ -54,5 +63,31 @@ html {
   50% {
     transform: translateY(0);
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes scrollfade {
+  50% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+}
+
+@keyframes opacityonly {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
