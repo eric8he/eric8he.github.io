@@ -67,12 +67,12 @@ html {
 }
 
 @keyframes scrollfade {
-  50% {
+  25% {
     transform: translateY(150%);
     opacity: 0;
   }
 
-  100% {
+  50% {
     transform: translateY(200%);
     opacity: 0;
   }
