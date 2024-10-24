@@ -27,6 +27,25 @@ html {
   animation: bounce 1s infinite;
 }
 
+@keyframes backgroundScroll {
+  0% { background-position: 50% 50%; }
+  33% { background-position: 1% 50%; }
+  40% { background-position: 1% 50%; }
+  66% { background-position: 99% 50%; }
+  75% { background-position: 99% 50%; }
+  100% { background-position: 50% 50%; }
+}
+
+#move-scroll {
+  width: 100%;
+  height: 100%;
+  background: url(./resources/bg.jpeg) no-repeat;
+  background-size: 150%;
+  background-position: 50% 50%;
+  animation: backgroundScroll 60s ease-in-out 1s infinite; 
+}
+
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);
