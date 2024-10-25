@@ -16,7 +16,7 @@
             </a>
             
             <div class="hidden md:flex items-center space-x-8">
-                <a href="../index.html/" class="text-gray-300 hover:text-white transition-colors duration-200">Home</a>
+                <a href="../" class="text-gray-300 hover:text-white transition-colors duration-200">Home</a>
             </div>
 
             <div class="flex items-center space-x-4">
@@ -31,14 +31,14 @@
     </nav>
     
     <!-- Title -->
-    <div id="openmax-title" class="py-24 px-4 bg-slate-850/50">
+    <div id="openmax-title" class="py-24 px-4 bg-slate-900/50">
         <div class="max-w-6xl mx-auto">
             <h1 class="text-4xl md:text-5xl font-bold text-center mb-8 pt-16">OpenMax Explorer</h1>
         </div>
     </div>
 
     <!-- About Section -->
-    <div id="about" class="py-24 px-4 bg-slate-850/50">
+    <div id="about" class="py-24 px-4 bg-slate-800/50">
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="space-y-4 items-center">
@@ -71,12 +71,12 @@
                     <div class="flex space-x-4">
                         <h3 class="text-xl font-semibold text-center w-full">Uploaded File</h3>
                     </div>
-                    <div class="flex items-center space-x-4">
-                        <div class="aspect-square overflow-hidden w-full">
-                            <img id="openmax-image" src="" class="overflow-hidden w-full h-full object-cover" style="background-position:center center;"/>
+                    <div class="flex items-center space-x-4 mb-0 relative">
+                        <div class="aspect-square overflow-hidden w-full border-2 border-slate-500">
+                            <img id="openmax-image" src="" class="overflow-hidden w-full h-full object-cover" style="background-position:center center;" hidden/>
                         </div>
+                        <p id="openmax-filename" class="absolute top-0 left-0 z-50 px-3 py-2 !mx-0 bg-slate-950/50 rounded-br-lg"></p>
                     </div>
-                    <p id="openmax-filename" class="nomargin"></p>
                 </div>
             </div>
         </div>
