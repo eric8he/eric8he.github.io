@@ -69,13 +69,16 @@
                 </div>
                 <div class="space-y-4 items-stretch">
                     <div class="flex space-x-4">
-                        <h3 class="text-xl font-semibold text-center w-full">Uploaded File</h3>
+                        <h3 class="text-xl font-semibold text-center w-full">Chosen Image</h3>
                     </div>
                     <div class="flex items-center space-x-4 mb-0 relative">
                         <div class="aspect-square overflow-hidden w-full border-2 border-slate-500">
-                            <img id="openmax-image" src="" class="overflow-hidden w-full h-full object-cover" style="background-position:center center;" hidden/>
+                            <img id="openmax-image" src="" class="overflow-hidden w-full h-full object-cover z-10" style="background-position:center center;" hidden/>
                         </div>
-                        <p id="openmax-filename" class="absolute top-0 left-0 z-50 px-3 py-2 !mx-0 bg-slate-950/50 rounded-br-lg"></p>
+                        <p id="openmax-filename" class="absolute top-0 left-0 z-50 px-3 py-2 !mx-0 bg-slate-950/50 rounded-br-lg" hidden></p>
+                        <div class="absolute top-0 bottom-0 left-0 right-0 !mx-0 text-center content-center w-full h-full">
+                            <p class="px-3 py-2 bg-slate-950/50 rounded-br-lg mx-4">Choose an image!</p>
+                        </div>
                     </div>
                 </div>
             </div>

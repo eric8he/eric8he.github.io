@@ -31,5 +31,6 @@ imgInp.onchange = evt => {
         document.getElementById("openmax-image").src = URL.createObjectURL(file);
         document.getElementById("openmax-image").hidden = false;
         document.getElementById("openmax-filename").textContent = file.name;
+        document.getElementById("openmax-filename").hidden = false;
     }
 }
