@@ -41,22 +41,26 @@
     <div id="about" class="py-24 px-4 bg-slate-850/50">
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="space-y-4">
+                <div class="space-y-4 items-center">
                     <h3 class="text-xl font-semibold text-center w-full">Upload Image</h3>
-                    <form id="openmax-upload">
-                        <label class="custom-file-upload">
-                            <label for="imgInp" class="bg-slate-500 hover:bg-slate-700 p-4 rounded-md cursor-pointer">Choose File</label>
-                            <input id="imgInp" type="file" name="file" hidden/>
-                        </label><br /><br />
-                        <div class="flex w-full items-center">
-                            <p>Show OpenMax?&nbsp;&nbsp;</p>
-                            <label class="switch cursor-pointer">
-                                <input type="checkbox" name="open" checked="true"/>
-                                <span class="slider round bg-gray-600 before:bg-gray-400">
-                                    <span class="on">ON</span>
-                                    <span class="off">OFF</span>
-                                </span>
-                            </label>
+                    <form id="openmax-upload" class="w-3/5 justify-self-center">
+                        <div class="flex items-center justify-between">
+                            <div class="left-0">
+                                <label class="custom-file-upload">
+                                    <label for="imgInp" class="bg-slate-500 hover:bg-slate-700 p-4 rounded-md cursor-pointer">Choose File</label>
+                                    <input id="imgInp" type="file" name="file" hidden/>
+                                </label>
+                            </div>
+                            <div class="right-0 flex items-center">
+                                <p>Show OpenMax?&nbsp;&nbsp;</p>
+                                <label class="switch cursor-pointer">
+                                    <input type="checkbox" name="open" checked="true"/>
+                                    <span class="slider round bg-gray-600 before:bg-gray-400">
+                                        <span class="on">ON</span>
+                                        <span class="off">OFF</span>
+                                    </span>
+                                </label>
+                            </div>
                         </div>
                         <br />
                         <input class="right bg-slate-500 hover:bg-slate-700 p-4 rounded-md cursor-pointer" type="submit" value=Upload />
@@ -68,9 +72,11 @@
                         <h3 class="text-xl font-semibold text-center w-full">Uploaded File</h3>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <p id="openmax-filename" class="nomargin"></p>
-                        <img id="openmax-image" src="" width="100%"/>
+                        <div class="aspect-square overflow-hidden w-full">
+                            <img id="openmax-image" src="" class="overflow-hidden w-full h-full object-cover" style="background-position:center center;"/>
+                        </div>
                     </div>
+                    <p id="openmax-filename" class="nomargin"></p>
                 </div>
             </div>
         </div>

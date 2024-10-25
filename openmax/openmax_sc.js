@@ -26,8 +26,9 @@ document.getElementById("openmax-upload").addEventListener("submit", function(ev
 
 imgImp = document.getElementById('imgInp');
 imgInp.onchange = evt => {
-    const [file] = imgInp.files
+    const [file] = imgInp.files;
     if (file) {
-        document.getElementById("openmax-image").src = URL.createObjectURL(file)
+        document.getElementById("openmax-image").src = URL.createObjectURL(file);
+        document.getElementById("openmax-filename").textContent = file.name;
     }
 }
