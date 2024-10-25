@@ -27,15 +27,6 @@ html {
   animation: bounce 1s infinite;
 }
 
-@keyframes backgroundScroll {
-  0% { background-position: 50% 55%; }
-  33% { background-position: 1% 55%; }
-  40% { background-position: 1% 55%; }
-  66% { background-position: 99% 55%; }
-  70% { background-position: 99% 55%; }
-  100% { background-position: 50% 55%; }
-}
-
 #move-scroll {
   width: 100%;
   height: 100%;
@@ -53,6 +44,107 @@ html {
 #opacity-arrow {
   animation: opacityonly linear both;
   animation-timeline: scroll();
+}
+
+.label.custom-file-upload {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.aligned {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  color: #c5b0bf;
+  background-color: #542236;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #873053;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.on, .off {
+  color: white;
+  background-color: #00000000;
+  border-radius: 5px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  padding: 3px;
+  top: 50%;
+  left: 50%;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.on {
+  display: none;
+}
+
+input:checked+ .slider .on {
+  display: block;
+}
+
+input:checked + .slider .off {
+  display: none;
 }
 
 @keyframes bounce {
@@ -83,11 +175,20 @@ html {
     opacity: 1;
   }
 
-  50% {
+  25% {
     opacity: 0;
   }
 
   100% {
     opacity: 0;
   }
+}
+
+@keyframes backgroundScroll {
+  0% { background-position: 50% 55%; }
+  33% { background-position: 1% 55%; }
+  40% { background-position: 1% 55%; }
+  66% { background-position: 99% 55%; }
+  70% { background-position: 99% 55%; }
+  100% { background-position: 50% 55%; }
 }
