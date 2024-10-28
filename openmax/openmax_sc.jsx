@@ -3,6 +3,23 @@ const ClassificationTable = ({ vals }) => {
         return null; // Return nothing if vals is not provided or not an array
     }
 
+
+    const redToGreenHex = (percent) => {
+        // Clamp the input to be between 0 and 100
+        percent = Math.min(100, Math.max(0, percent));
+        const proportion = Math.log(percent + 1)/Math.log(100);
+        
+        // Calculate the red and green values based on the percentage
+        const red = Math.floor(255 * (1 - proportion));
+        const green = Math.floor(255 * proportion);
+        
+        // Convert the RGB values to a hex string
+        const redHex = red.toString(16).padStart(2, '0');
+        const greenHex = green.toString(16).padStart(2, '0');
+        
+        return `#${redHex}${greenHex}00`;
+    }
+
     const formatConfidence = (value) => {
         const num = Number(value);
         return isNaN(num) ? value : num.toFixed(5);
@@ -12,13 +29,13 @@ const ClassificationTable = ({ vals }) => {
         <table className="itable">
             <thead>
                 <tr>
-                    <th>Classification</th>
-                    <th>Confidence</th>
+                    <th>Class</th>
+                    <th>Conf</th>
                 </tr>
             </thead>
             <tbody>
                 {data.map((val, index) => (
-                    <tr key={index}>
+                    <tr key={index} style={{color: redToGreenHex(formatConfidence(val[1]))}}>
                         <td>{val[0]}</td>
                         <td>{formatConfidence(val[1])}</td>
                     </tr>
@@ -34,10 +51,10 @@ const ClassificationTable = ({ vals }) => {
                 <thead>
                     <tr>
                         <th>
-                            <h2>OpenMax Classification</h2>
+                            <h2>OpenMax</h2>
                         </th>
                         <th>
-                            <h2>Naive Classification</h2>
+                            <h2>Naive</h2>
                         </th>
                     </tr>
                 </thead>
@@ -77,7 +94,7 @@ document.getElementById("openmax-upload").addEventListener("submit", function (e
     const formData = new FormData(this);
 
 
-    var resp = fetch("http://35.193.160.193:80", {
+    var resp = fetch("https://openmax-demo.onrender.com", {
         method: "POST",
         body: formData // Send the FormData object directly
     })
