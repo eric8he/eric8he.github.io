@@ -13,9 +13,13 @@ const ClassificationTable = ({ vals }) => {
         const red = Math.floor(255 * (1 - proportion));
         const green = Math.floor(255 * proportion);
         
+        // Clamp the values to be between 0 and 255
+        const clampedRed = Math.min(255, Math.max(0, red));
+        const clampedGreen = Math.min(255, Math.max(0, green));
+
         // Convert the RGB values to a hex string
-        const redHex = red.toString(16).padStart(2, '0');
-        const greenHex = green.toString(16).padStart(2, '0');
+        const redHex = clampedRed.toString(16).padStart(2, '0');
+        const greenHex = clampedGreen.toString(16).padStart(2, '0');
         
         return `#${redHex}${greenHex}00`;
     }
