@@ -21,7 +21,7 @@ const ClassificationTable = ({ vals }) => {
     };
 
     const renderTable = (data) => (
-        <table className="itable">
+        <table className="itable w-full">
             <thead>
                 <tr>
                     <th>Class</th>
@@ -31,7 +31,7 @@ const ClassificationTable = ({ vals }) => {
             <tbody>
                 {data.map((val, index) => (
                     <tr key={index} style={{color: redToGreenHSL(formatConfidence(val[1]))}}>
-                        <td>{val[0]}</td>
+                        <td style={{marginRight: "5px"}}>{val[0]}</td>
                         <td style={{textAlign: "right", marginLeft: "5px"}}>{formatConfidence(val[1])}</td>
                     </tr>
                 ))}
@@ -42,42 +42,48 @@ const ClassificationTable = ({ vals }) => {
     if (vals.length === 2) {
         // Render the two-column table
         return (
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            <h2>OpenMax</h2>
-                        </th>
-                        <th>
-                            <h2>Naive</h2>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>{renderTable(vals[0])}</td>
-                        <td style={{paddingLeft: "10px"}}>{renderTable(vals[1])}</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="items-center">
+                <h3 class="text-3xl font-semibold text-center w-full">Classification Results</h3>
+                <table class="w-full">
+                    <thead>
+                        <tr>
+                            <th>
+                                <h2 class="text-2xl">OpenMax</h2>
+                            </th>
+                            <th>
+                                <h2 class="text-2xl">Naive</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{renderTable(vals[0])}</td>
+                            <td style={{paddingLeft: "10px"}}>{renderTable(vals[1])}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         );
     } else {
         // Render the single-column table
         return (
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            <h2>Naive Classification</h2>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>{renderTable(vals[0])}</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="items-center">
+                <h3 class="text-3xl font-semibold text-center w-full">Classification Results</h3>
+                <table class="w-full">
+                    <thead>
+                        <tr>
+                            <th>
+                                <h2 class="text-2xl">Naive Classification</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{renderTable(vals[0])}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         );
     }
 };
