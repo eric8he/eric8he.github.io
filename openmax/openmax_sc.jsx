@@ -4,24 +4,15 @@ const ClassificationTable = ({ vals }) => {
     }
 
 
-    const redToGreenHex = (percent) => {
+    const redToGreenHSL = (percent) => {
         // Clamp the input to be between 0 and 100
         percent = Math.min(100, Math.max(0, percent));
         const proportion = Math.log(percent + 1)/Math.log(100);
         
-        // Calculate the red and green values based on the percentage
-        const red = Math.floor(255 * (1 - proportion));
-        const green = Math.floor(255 * proportion);
+        // Convert the percentage to a hue value between 0 and 120
+        const hue = proportion * 120;
         
-        // Clamp the values to be between 0 and 255
-        const clampedRed = Math.min(255, Math.max(0, red));
-        const clampedGreen = Math.min(255, Math.max(0, green));
-
-        // Convert the RGB values to a hex string
-        const redHex = clampedRed.toString(16).padStart(2, '0');
-        const greenHex = clampedGreen.toString(16).padStart(2, '0');
-        
-        return `#${redHex}${greenHex}00`;
+        return `hsl(${hue}, 100%, 50%)`;
     }
 
     const formatConfidence = (value) => {
@@ -39,9 +30,9 @@ const ClassificationTable = ({ vals }) => {
             </thead>
             <tbody>
                 {data.map((val, index) => (
-                    <tr key={index} style={{color: redToGreenHex(formatConfidence(val[1]))}}>
+                    <tr key={index} style={{color: redToGreenHSL(formatConfidence(val[1]))}}>
                         <td>{val[0]}</td>
-                        <td>{formatConfidence(val[1])}</td>
+                        <td style={{textAlign: "right", marginLeft: "5px"}}>{formatConfidence(val[1])}</td>
                     </tr>
                 ))}
             </tbody>
@@ -65,7 +56,7 @@ const ClassificationTable = ({ vals }) => {
                 <tbody>
                     <tr>
                         <td>{renderTable(vals[0])}</td>
-                        <td>{renderTable(vals[1])}</td>
+                        <td style={{paddingLeft: "10px"}}>{renderTable(vals[1])}</td>
                     </tr>
                 </tbody>
             </table>
